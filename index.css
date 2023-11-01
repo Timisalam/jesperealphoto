@@ -1,0 +1,143 @@
+/*GENERAL*/
+
+* {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(137, 137, 137);
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(137, 137, 137);
+}
+
+a:hover {
+    color: rgb(216, 216, 216);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: Barlow, arial;
+    text-shadow: 2px 3px 5px rgb(40, 40, 40);
+    color: rgb(237, 237, 237);
+    top: 10%;
+    
+}
+.nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 15vh;
+    margin-right: 2%;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 1%;
+}
+
+.nav-item:hover {
+    transform: translateY(2px);
+
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    font-style: oblique;
+    /*moves first item in flexbox to very left*/
+}
+
+
+
+.nav-link:link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vh;
+}
+
+.nav-link:visited {
+    color: black;
+}
+
+
+.nav-link:hover {
+    color: black;
+}
+
+.background-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-img-container img {
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    object-fit: cover;
+    object-position: bottom;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.duo-img{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    height: 100%;
+
+}
+.duo-img div{
+    height: 100%;
+    position: relative;
+}
+.first-photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.second-photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.landscape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landscape div{
+    height: 100%;
+    position: relative;
+}
+.landscape img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
