@@ -4,21 +4,6 @@
     margin: 0;
     font-family: 'Oswald', sans-serif;
 }
-
-a:visited {
-    text-decoration: none;
-    color: rgb(137, 137, 137);
-}
-
-a:link {
-    text-decoration: none;
-    color: rgb(137, 137, 137);
-}
-
-a:hover {
-    color: rgb(216, 216, 216);
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -28,6 +13,7 @@ html,
 body {
     height: 100%;
 }
+/*GENERAL*/
 
 /*HEADER*/
 
@@ -86,6 +72,9 @@ header {
 .nav-link:hover {
     color: black;
 }
+/*HEADER*/
+
+/*MAIN*/
 
 .background-img-container {
     display: flex;
@@ -100,11 +89,7 @@ header {
     object-fit: cover;
     object-position: bottom;
 }
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .duo-img{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -133,11 +118,61 @@ main{
     justify-content: center;
 }
 .landscape div{
-    height: 100%;
     position: relative;
 }
 .landscape img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    display: block;
 }
+.triple{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    height: 100%;
+
+}
+.triple div{
+    height: 100%;
+    position: relative;
+}
+.triple div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.CTA{
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.CTA:hover{
+    transform: translateY(2px);
+}
+footer{
+    background-color: black;
+    padding: 5%;
+}
+footer a{
+    color: white;
+    display: block;
+    margin: 2%;
+    text-decoration: none;
+}
+footer a:hover {
+    transform: translateY(2px);
+
+}
+/*MAIN*/
