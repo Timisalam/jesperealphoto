@@ -61,7 +61,7 @@ header {
     text-decoration: none;
     color: black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3vh;
+    font-size: 4vw;
 }
 
 .nav-link:visited {
@@ -154,9 +154,10 @@ header {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 4vw;
     font-weight: 600;
     cursor: pointer;
+    margin-bottom:7% ;
 }
 .CTA:hover{
     transform: translateY(2px);
@@ -170,6 +171,8 @@ footer a{
     display: block;
     margin: 2%;
     text-decoration: none;
+    font-size: 3vw;
+
 }
 footer a:hover {
     transform: translateY(2px);
