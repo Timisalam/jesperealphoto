@@ -25,9 +25,7 @@ header {
     position: absolute;
     width: 100%;
     text-align: center;
-    font-family: Barlow, arial;
     text-shadow: 2px 3px 5px rgb(40, 40, 40);
-    color: rgb(237, 237, 237);
     top: 10%;
     
 }
@@ -42,6 +40,7 @@ header {
 
 .nav-item {
     margin: 1%;
+    position: relative;
 }
 
 .nav-item:hover {
@@ -52,7 +51,17 @@ header {
 .nav-item:first-child {
     margin-right: auto;
     font-style: oblique;
+    
     /*moves first item in flexbox to very left*/
+}
+.logo{
+    color: black;
+    z-index: 1;
+    margin-right: 40%;
+    
+}
+.logo img{
+    width: 50%;
 }
 
 
@@ -82,7 +91,7 @@ header {
     justify-content: center;
 }
 
-.background-img-container img {
+.background-img-container .background-img{
     width: 100%;
     height: 100%;
     opacity: .8;
