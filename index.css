@@ -10,11 +10,6 @@ body {
     flex-direction: column;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 /*GENERAL*/
 
 /*HEADER*/
@@ -22,11 +17,13 @@ body {
     display: none;
 }
 nav {
-    background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 nav .mainMenu {
@@ -213,9 +210,6 @@ nav .mainMenu .closeMenu,
         object-fit: cover;
         object-position: bottom;
     }
-
-    
-    
 }
 /*HEADER*/
 
@@ -223,6 +217,7 @@ nav .mainMenu .closeMenu,
 
 .main-img-container {
     height: 100vh;
+    overflow: hidden;
 }
 
 .main-img-container .main-img {
@@ -231,6 +226,7 @@ nav .mainMenu .closeMenu,
     object-fit: cover;
     object-position: bottom;
 }
+
 @media (min-width:800px) {
     .main-img-container {
         display: none;
@@ -321,18 +317,23 @@ nav .mainMenu .closeMenu,
     transform: translateY(2px);
 }
 
+/*MAIN*/
+
+/*FOOTER*/
+
 footer {
     background-color: black;
     padding: 5%;
+    position: relative;
 }
 
 footer a {
     color: white;
+    padding: 0;
     display: block;
     margin: 2%;
     text-decoration: none;
     font-size: 3vw;
-
 }
 
 footer a:hover {
@@ -348,5 +349,15 @@ footer a:hover {
     }
 }
 
+.instaIcon {
+    position: absolute;
+    bottom: 35%;
+    right: 6%;
+    height: 35%;
+}
 
-/*MAIN*/
+.instaIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
