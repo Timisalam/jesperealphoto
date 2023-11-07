@@ -32,6 +32,7 @@ nav {
 nav .mainMenu {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
 nav .mainMenu li a {
