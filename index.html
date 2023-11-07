@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <title>Jesperealphoto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,28 +18,47 @@
 <body>
     <header>
         <div class="background-img-container">
-        <img  src="pexels-josh-hild-4424567.jpg" alt="" class="background-img">
-        <div class="navigation">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="logo" href="index.html"><img src="Black and White Minimal Modern Photography Logo-PhotoRoom.png-PhotoRoom.png" alt=""></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li> 
-        </ul>
+            <img  src="pexels-josh-hild-4424567.jpg" alt="" class="background-img">
+            <div class="navigation">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="logo" href="index.html"><img src="Black and White Minimal Modern Photography Logo-PhotoRoom.png-PhotoRoom.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li> 
+            </ul>
+            </div>
         </div>
-    </div>
+        <nav>
+            <div class="logo-div"><a class="logo" href="index.html"><img src="Black and White Minimal Modern Photography Logo (1)-PhotoRoom.png-PhotoRoom.png" alt=""></a></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </ul>
+        </nav>
     </header>
+    <div class="main-img-container">
+        <img  src="pexels-josh-hild-4424567.jpg" alt="" class="main-img">
+        </div>
         <div class="duo-img">
             <div class="first-photo"><img src="pexels-carlos-oliva-3586902.jpg" alt=""></div>
             <div class="second-photo"><img src="pexels-pixabay-372462.jpg" alt=""></div>
@@ -58,10 +78,11 @@
         <footer>
             <a href="" class="instagram">Instagram</a>
             <a href="" class="portfolio">Portfolio</a>
-            <a href="" class="contact">Contact me</a>
-            <a href="" class="about-me">About me</a>
+            <a href="" class="contact">Contact</a>
+            <a href="" class="about-me">About</a>
         </footer>
-    
+        <script src="./app.js"></script>
+
 </body>
 
 </html>

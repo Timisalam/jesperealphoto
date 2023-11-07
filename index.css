@@ -4,6 +4,7 @@
     margin: 0;
     font-family: 'Oswald', sans-serif;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -13,146 +14,298 @@ html,
 body {
     height: 100%;
 }
+
 /*GENERAL*/
 
 /*HEADER*/
+.background-img-container{
+    display: none;
+}
+nav {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-header {
+nav .mainMenu {
     display: flex;
-    align-items: center;
-}
-.navigation{
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    text-shadow: 2px 3px 5px rgb(40, 40, 40);
-    top: 10%;
-    
-}
-.nav{
-    display: flex;
-    align-items: center;
     list-style: none;
-    height: 15vh;
-    margin-right: 2%;
-    padding: 0;
 }
 
-.nav-item {
-    margin: 1%;
-    position: relative;
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
 }
 
-.nav-item:hover {
-    transform: translateY(2px);
-
+nav .mainMenu li a:hover {
+    background: rgb(255, 94, 0);
 }
 
-.nav-item:first-child {
-    margin-right: auto;
-    font-style: oblique;
-    
-    /*moves first item in flexbox to very left*/
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: rgb(0, 110, 255);
+}
+
+.fa-twitter:hover {
+    color: rgb(86, 154, 243);
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+
+.fa-github:hover {
+    color: rgb(255, 123, 0);
+}
+
+.logo-div{
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 .logo{
-    color: black;
-    z-index: 1;
-    margin-right: 40%;
-    
-}
+        color: black;
+        z-index: 1;
+        margin-right: 40%;
+        
+    }
 .logo img{
-    width: 50%;
-}
+        width: 30%;
+    }
+    
+    
 
 
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease 0s;
+        display: none;
+    }
 
-.nav-link:link {
-    text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 4vw;
-}
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 
-.nav-link:visited {
-    color: black;
-}
+    nav .openMenu {
+        display: block;
+    }
 
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
 
-.nav-link:hover {
-    color: black;
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+@media (min-width:800px) {
+    nav{
+        display: none;
+
+    }
+    header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navigation{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        text-shadow: 2px 3px 5px rgb(40, 40, 40);
+        top: 10%;
+        
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        height: 15vh;
+        margin-right: 2%;
+        padding: 0;
+    }
+    
+    .nav-item {
+        margin: 1%;
+        position: relative;
+    }
+    
+    .nav-item:hover {
+        transform: translateY(2px);
+    
+    }
+    
+    .nav-item:first-child {
+        margin-right: auto;
+        font-style: oblique;
+        
+        /*moves first item in flexbox to very left*/
+    }
+    .logo{
+        color: black;
+        z-index: 1;
+        margin-right: 40%;
+        
+    }
+    .logo img{
+        width: 50%;
+    }
+    
+    
+    
+    .nav-link:link {
+        text-decoration: none;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3vw;
+    }
+    
+    .nav-link:visited {
+        color: black;
+    }
+    
+    
+    .nav-link:hover {
+        color: black;
+    }
+    .background-img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .background-img-container .background-img {
+        width: 100%;
+        height: 100%;
+        opacity: .8;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    
+    
 }
 /*HEADER*/
 
 /*MAIN*/
 
-.background-img-container {
+.main-img-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.background-img-container .background-img{
+.main-img-container .main-img {
     width: 100%;
     height: 100%;
     opacity: .8;
     object-fit: cover;
     object-position: bottom;
 }
+@media (min-width:800px) {
+    .main-img-container {
+        display: none;
+    }
+}
 
-.duo-img{
-    display:grid;
+
+.duo-img {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
     height: 100%;
 
 }
-.duo-img div{
+
+.duo-img div {
     height: 100%;
     position: relative;
 }
-.first-photo img{
+
+.first-photo img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.second-photo img{
+
+.second-photo img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 
 }
-.landscape{
+
+.landscape {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.landscape div{
+
+.landscape div {
     position: relative;
 }
-.landscape img{
+
+.landscape img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     display: block;
 }
-.triple{
-    display:grid;
+
+.triple {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100%;
     height: 100%;
 
 }
-.triple div{
+
+.triple div {
     height: 100%;
     position: relative;
 }
-.triple div img{
+
+.triple div img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.CTA{
+.CTA {
     position: absolute;
     z-index: 1;
     background-color: black;
@@ -166,16 +319,19 @@ header {
     font-size: 4vw;
     font-weight: 600;
     cursor: pointer;
-    margin-bottom:7% ;
+    margin-bottom: 7%;
 }
-.CTA:hover{
+
+.CTA:hover {
     transform: translateY(2px);
 }
-footer{
+
+footer {
     background-color: black;
     padding: 5%;
 }
-footer a{
+
+footer a {
     color: white;
     display: block;
     margin: 2%;
@@ -183,8 +339,19 @@ footer a{
     font-size: 3vw;
 
 }
+
 footer a:hover {
     transform: translateY(2px);
 
 }
+@media (min-width:800px) {
+    .footer a{
+        font-size: 2vw;
+    }
+    footer{
+        padding: 1%;
+    }
+}
+
+
 /*MAIN*/
