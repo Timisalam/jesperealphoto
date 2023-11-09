@@ -1,0 +1,358 @@
+/*GENERAL*/
+
+* {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*GENERAL*/
+
+/*HEADER*/
+.background-img-container{
+    display: none;
+}
+nav {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+nav .mainMenu li a:hover {
+    background: rgb(255, 94, 0);
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: rgb(0, 110, 255);
+}
+
+.fa-twitter:hover {
+    color: rgb(86, 154, 243);
+}
+
+.fa-instagram {
+    color: rgb(255, 0, 191);
+}
+
+.fa-github:hover {
+    color: rgb(255, 123, 0);
+}
+
+.logo-div{
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.logo{
+        color: black;
+        z-index: 1;
+        margin-right: 40%;
+        
+    }
+.logo img{
+        width: 30%;
+    }
+
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+@media (min-width:800px) {
+    nav{
+        display: none;
+
+    }
+    header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navigation{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        text-shadow: 2px 3px 5px rgb(40, 40, 40);
+        top: 10%;
+        
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        height: 15vh;
+        margin-right: 2%;
+        padding: 0;
+    }
+    
+    .nav-item {
+        margin: 1%;
+        position: relative;
+    }
+    
+    .nav-item:hover {
+        transform: translateY(2px);
+    
+    }
+    
+    .nav-item:first-child {
+        margin-right: auto;
+        font-style: oblique;
+        
+        /*moves first item in flexbox to very left*/
+    }
+    .logo{
+        color: black;
+        z-index: 1;
+        margin-right: 40%;
+        
+    }
+    .logo img{
+        width: 50%;
+    }
+    
+    
+    
+    .nav-link:link {
+        text-decoration: none;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3vw;
+    }
+    
+    .nav-link:visited {
+        color: black;
+    }
+    
+    
+    .nav-link:hover {
+        color: black;
+    }
+    .background-img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .background-img-container .background-img {
+        width: 100vw;
+        height: 100vh;
+        opacity: .8;
+        object-fit: cover;
+    }
+}
+/*HEADER*/
+
+/*MAIN*/
+
+@media (min-width:800px) {
+    .main-img-container {
+        display: none;
+    }
+}
+
+.mainImgDiv {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mainImgDiv img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.name {
+    position: absolute; /* Positioned absolutely within the container */
+    top: 50%; /* Center vertically by setting it to 50% of the parent's height */
+    left: 50%; /* Center horizontally by setting it to 50% of the parent's width */
+    transform: translate(-50%, -50%); /* Move the element up and left by 50% of its own width and height */
+    font-size: 400%;
+    font-weight: 400;
+    color: rgb(254, 226, 148);
+}
+
+.aboutImg {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.aboutImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overImg {
+    color: rgb(255, 243, 210);
+    height: 65%;
+    width: 70%;
+    position: absolute;
+    top: calc(17.5%) ;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-size: 110%;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.grid {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr
+}
+
+.rowTypeEven {
+    display: grid;
+    height: 60vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*MAIN*/
+
+/*FOOTER*/
+
+footer {
+    background-color: black;
+    padding: 5%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.items{
+    grid-column: 1;
+}
+
+footer a {
+    color: white;
+    padding: 0;
+    display: block;
+    margin: 2%;
+    text-decoration: none;
+    font-size: 5vw;
+}
+
+footer a:hover {
+    transform: translateY(2px);
+
+}
+@media (min-width:800px) {
+    footer a{
+        font-size: 2vw;
+        margin: 1%;
+    }
+    footer{
+        padding: 1%;
+    }
+}
+.footer-icons{
+    display: flex;
+    justify-content: flex-end;
+    grid-column:2;
+    grid-row: 2;
+}
+.footer-icons i {
+    font-size: 10vw;
+    cursor: pointer;
+}
+@media (min-width:800px) {
+    .footer-icons i {
+        margin-right: 2%;
+        font-size: 3vw;
+    }
+    .fa-instagram {
+        color: white;
+    }
+    .fa-instagram:hover {
+        color: rgb(255, 0, 191);
+    }
+    
+}
