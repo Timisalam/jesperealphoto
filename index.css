@@ -323,12 +323,14 @@ nav .mainMenu .closeMenu,
 footer {
     background-color: black;
     padding: 5%;
-    position: relative;
-    display: grid;
+    display: grid;  
     grid-template-columns: 1fr 1fr;
 }
 .items{
     grid-column: 1;
+}
+footer div{
+    display: flex;
 }
 
 footer a {
@@ -338,6 +340,7 @@ footer a {
     margin: 2%;
     text-decoration: none;
     font-size: 5vw;
+    cursor: pointer;
 }
 
 footer a:hover {
