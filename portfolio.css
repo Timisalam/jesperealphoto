@@ -214,68 +214,6 @@ nav .mainMenu .closeMenu,
 
 /*MAIN*/
 
-@media (min-width:800px) {
-    .main-img-container {
-        display: none;
-    }
-}
-
-.mainImgDiv {
-    height: 100vh;
-    overflow: hidden;
-}
-
-.mainImgDiv img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.name {
-    position: absolute; /* Positioned absolutely within the container */
-    top: 50%; /* Center vertically by setting it to 50% of the parent's height */
-    left: 50%; /* Center horizontally by setting it to 50% of the parent's width */
-    transform: translate(-50%, -50%); /* Move the element up and left by 50% of its own width and height */
-    font-size: 400%;
-    font-weight: 400;
-    color: rgb(254, 226, 148);
-}
-
-.aboutImg {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-}
-
-.aboutImg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.overImg {
-    color: rgb(255, 243, 210);
-    height: 65%;
-    width: 70%;
-    position: absolute;
-    top: calc(17.5%) ;
-    left: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.text {
-    font-size: 110%;
-    font-weight: 600;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: inline-block;
-}
-
 .grid {
     display: grid;
     width: 100vw;
@@ -284,9 +222,23 @@ nav .mainMenu .closeMenu,
 
 .rowTypeEven {
     display: grid;
-    height: 60vh;
+    height: 65vh;
     width: 100vw;
     grid-template-columns: 1fr 1fr
+}
+
+.rowTypeUneven1 {
+    display: grid;
+    height: 55vh;
+    width: 100vw;
+    grid-template-columns: 65% 35%
+}
+
+.rowTypeUneven2 {
+    display: grid;
+    height: 30vh;
+    width: 100vw;
+    grid-template-columns: 30% 70%
 }
 
 .grid img {
@@ -294,7 +246,6 @@ nav .mainMenu .closeMenu,
     height: 100%;
     object-fit: cover;
 }
-
 
 /*MAIN*/
 
