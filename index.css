@@ -248,8 +248,8 @@ nav .mainMenu .closeMenu,
 
 .first-photo img,
 .second-photo img {
-    height: 120%; /* Adjust the percentage based on your preference */
-    width: 120%;
+    height: 100%; /* Adjust the percentage based on your preference */
+    width: 100%;
     object-fit: cover;
 }
 
