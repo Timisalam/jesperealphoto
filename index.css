@@ -296,11 +296,11 @@ nav .mainMenu .closeMenu,
     border: 2px solid rgb(255, 255, 255);
     border-radius: 5px;
     color: white;
-    padding: 8px 18px;
+    padding: 4px 14px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 7%;
