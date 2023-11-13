@@ -235,7 +235,7 @@ nav .mainMenu .closeMenu,
 
 .duo-img {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     grid-template-rows: 100%;
     height: 100%;
 
@@ -246,17 +246,11 @@ nav .mainMenu .closeMenu,
     position: relative;
 }
 
-.first-photo img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
+.first-photo img,
 .second-photo img {
-    height: 100%;
-    width: 100%;
+    height: 120%; /* Adjust the percentage based on your preference */
+    width: 120%;
     object-fit: cover;
-
 }
 
 .landscape {
@@ -278,7 +272,7 @@ nav .mainMenu .closeMenu,
 
 .triple {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.35fr 1fr ;
     grid-template-rows: 100%;
     height: 100%;
 
@@ -306,10 +300,11 @@ nav .mainMenu .closeMenu,
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 4vw;
+    font-size: 2vw;
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 7%;
+    
 }
 
 .CTA:hover {
