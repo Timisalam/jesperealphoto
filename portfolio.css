@@ -237,6 +237,10 @@ nav .mainMenu .closeMenu,
     object-fit: cover;
 }
 
+.firstPhotoInTheGrid {
+    height: 80vh;
+}
+
 /*MAIN*/
 
 /*FOOTER*/
