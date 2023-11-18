@@ -13,7 +13,7 @@ body {
 /*GENERAL*/
 
 /*HEADER*/
-.background-img-container{
+.navigation {
     display: none;
 }
 nav {
@@ -82,10 +82,8 @@ nav .mainMenu .closeMenu,
     text-transform: uppercase;
 }
 .logo{
-        color: black;
         z-index: 1;
         margin-right: 40%;
-        
     }
 .logo img{
         width: 30%;
@@ -143,7 +141,9 @@ nav .mainMenu .closeMenu,
         text-align: center;
         text-shadow: 2px 3px 5px rgb(40, 40, 40);
         top: 10%;
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .nav{
         display: flex;
@@ -171,7 +171,7 @@ nav .mainMenu .closeMenu,
         /*moves first item in flexbox to very left*/
     }
     .logo{
-        color: black;
+        color: white;
         z-index: 1;
         margin-right: 40%;
         
@@ -180,30 +180,23 @@ nav .mainMenu .closeMenu,
         width: 50%;
     }
     
-    
-    
     .nav-link:link {
         text-decoration: none;
-        color: black;
+        color: white;
         font-family: 'Times New Roman', Times, serif;
         font-size: 3vw;
     }
     
     .nav-link:visited {
-        color: black;
+        color: white;
     }
     
     
     .nav-link:hover {
-        color: black;
-    }
-    .background-img-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        color: white;
     }
     
-    .background-img-container .background-img {
+    .navigation .background-img {
         width: 100vw;
         height: 100vh;
         opacity: .8;
@@ -216,28 +209,25 @@ nav .mainMenu .closeMenu,
 
 .grid {
     display: grid;
-    width: 100vw;
+    width: 100%;
     grid-template-columns: 1fr
 }
 
 .rowTypeEven {
     display: grid;
     height: 65vh;
-    width: 100vw;
     grid-template-columns: 1fr 1fr
 }
 
 .rowTypeUneven1 {
     display: grid;
     height: 55vh;
-    width: 100vw;
     grid-template-columns: 65% 35%
 }
 
 .rowTypeUneven2 {
     display: grid;
     height: 30vh;
-    width: 100vw;
     grid-template-columns: 30% 70%
 }
 

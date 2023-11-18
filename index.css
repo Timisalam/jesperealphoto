@@ -130,21 +130,21 @@ nav .mainMenu .closeMenu,
 @media (min-width:800px) {
     nav{
         display: none;
-
     }
+
     header {
         display: flex;
         align-items: center;
     }
-    
+
     .navigation{
         position: absolute;
         width: 100%;
         text-align: center;
         text-shadow: 2px 3px 5px rgb(40, 40, 40);
         top: 10%;
-        
     }
+
     .nav{
         display: flex;
         align-items: center;
@@ -158,51 +158,48 @@ nav .mainMenu .closeMenu,
         margin: 1%;
         position: relative;
     }
-    
+
     .nav-item:hover {
         transform: translateY(2px);
-    
     }
-    
+
     .nav-item:first-child {
         margin-right: auto;
         font-style: oblique;
-        
         /*moves first item in flexbox to very left*/
     }
+
     .logo{
         color: black;
         z-index: 1;
         margin-right: 40%;
-        
     }
+
     .logo img{
         width: 50%;
     }
-    
-    
-    
+
     .nav-link:link {
         text-decoration: none;
         color: black;
         font-family: 'Times New Roman', Times, serif;
         font-size: 3vw;
     }
-    
+
     .nav-link:visited {
         color: black;
     }
-    
-    
+
     .nav-link:hover {
         color: black;
     }
+
     .background-img-container {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     .background-img-container .background-img {
         width: 100vw;
         height: 100vh;

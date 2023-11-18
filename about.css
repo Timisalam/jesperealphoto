@@ -3,6 +3,7 @@
 * {
     margin: 0;
     font-family: 'Oswald', sans-serif;
+    
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 /*GENERAL*/
 
 /*HEADER*/
-.background-img-container{
+.navigation {
     display: none;
 }
 nav {
@@ -143,7 +144,9 @@ nav .mainMenu .closeMenu,
         text-align: center;
         text-shadow: 2px 3px 5px rgb(40, 40, 40);
         top: 10%;
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .nav{
         display: flex;
@@ -161,7 +164,6 @@ nav .mainMenu .closeMenu,
     
     .nav-item:hover {
         transform: translateY(2px);
-    
     }
     
     .nav-item:first-child {
@@ -179,9 +181,7 @@ nav .mainMenu .closeMenu,
     .logo img{
         width: 50%;
     }
-    
-    
-    
+
     .nav-link:link {
         text-decoration: none;
         color: black;
@@ -197,13 +197,8 @@ nav .mainMenu .closeMenu,
     .nav-link:hover {
         color: black;
     }
-    .background-img-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     
-    .background-img-container .background-img {
+    .background-img {
         width: 100vw;
         height: 100vh;
         opacity: .8;
@@ -278,14 +273,13 @@ nav .mainMenu .closeMenu,
 
 .grid {
     display: grid;
-    width: 100vw;
+    width: 100%;
     grid-template-columns: 1fr
 }
 
 .rowTypeEven {
     display: grid;
     height: 60vh;
-    width: 100vw;
     grid-template-columns: 1fr 1fr
 }
 
@@ -293,6 +287,7 @@ nav .mainMenu .closeMenu,
     width: 100%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 
@@ -303,7 +298,6 @@ nav .mainMenu .closeMenu,
 footer {
     background-color: black;
     padding: 5%;
-    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
