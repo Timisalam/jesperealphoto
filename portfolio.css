@@ -13,7 +13,7 @@ body {
 /*GENERAL*/
 
 /*HEADER*/
-.navigation {
+.background-img-container{
     display: none;
 }
 nav {
@@ -60,21 +60,17 @@ nav .mainMenu .closeMenu,
     cursor: pointer;
 }
 
-.fa-facebook:hover {
+.fa-facebook {
     color: rgb(0, 110, 255);
 }
 
-.fa-twitter:hover {
-    color: rgb(86, 154, 243);
-}
+
 
 .fa-instagram {
     color: rgb(255, 0, 191);
 }
 
-.fa-github:hover {
-    color: rgb(255, 123, 0);
-}
+
 
 .logo-div{
     margin: 6px;
@@ -82,8 +78,10 @@ nav .mainMenu .closeMenu,
     text-transform: uppercase;
 }
 .logo{
+        color: black;
         z-index: 1;
         margin-right: 40%;
+        
     }
 .logo img{
         width: 30%;
@@ -128,23 +126,21 @@ nav .mainMenu .closeMenu,
 @media (min-width:800px) {
     nav{
         display: none;
-
     }
+
     header {
         display: flex;
         align-items: center;
     }
-    
+
     .navigation{
         position: absolute;
         width: 100%;
         text-align: center;
-        text-shadow: 2px 3px 5px rgb(40, 40, 40);
+        font-weight:300;
         top: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
+
     .nav{
         display: flex;
         align-items: center;
@@ -158,50 +154,55 @@ nav .mainMenu .closeMenu,
         margin: 1%;
         position: relative;
     }
-    
+
     .nav-item:hover {
         transform: translateY(2px);
-    
     }
-    
+
     .nav-item:first-child {
         margin-right: auto;
         font-style: oblique;
-        
         /*moves first item in flexbox to very left*/
     }
+
     .logo{
-        color: white;
+        color: black;
         z-index: 1;
         margin-right: 40%;
-        
     }
+
     .logo img{
         width: 50%;
     }
-    
+
     .nav-link:link {
         text-decoration: none;
-        color: white;
+        color: black;
         font-family: 'Times New Roman', Times, serif;
         font-size: 3vw;
     }
-    
+
     .nav-link:visited {
-        color: white;
+        color: black;
     }
-    
-    
+
     .nav-link:hover {
-        color: white;
+        color: black;
     }
-    
-    .navigation .background-img {
+
+    .background-img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .background-img-container .background-img {
         width: 100vw;
         height: 100vh;
-        opacity: .8;
+        opacity: .7;
         object-fit: cover;
     }
+    
 }
 /*HEADER*/
 
@@ -239,6 +240,11 @@ nav .mainMenu .closeMenu,
 
 .firstPhotoInTheGrid {
     height: 80vh;
+}
+@media (min-width:800px) {
+    .firstPhotoInTheGrid {
+        height: 80vh;
+    }
 }
 
 /*MAIN*/
