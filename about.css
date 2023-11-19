@@ -194,12 +194,14 @@ nav .mainMenu .closeMenu,
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .background-img-container .background-img {
         width: 100vw;
         height: 100vh;
-        opacity: .8;
+    }
+
+    .background-img {
+        width: 100%;
+        height: 100%;
+        opacity: .7;
         object-fit: cover;
     }
 }
