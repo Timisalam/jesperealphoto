@@ -253,17 +253,19 @@ nav .mainMenu .closeMenu,
 }
 
 .overImg {
-    color: white;
+    background-color: white;
+    color: black;
     height: 65%;
-    width: 80%;
+    width: 70%;
     position: absolute;
-    top: calc(17.5%);
+    top: calc(12.5%);
     left: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 115%;
+    font-size: 110%;
+    padding: 2% 5%;
 }
 
 .text {
