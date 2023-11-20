@@ -237,7 +237,7 @@ nav .mainMenu .closeMenu,
     transform: translate(-50%, -50%); /* Move the element up and left by 50% of its own width and height */
     font-size: 400%;
     font-weight: 400;
-    color: rgb(254, 226, 148);
+    color: white;
 }
 
 .aboutImg {
@@ -253,16 +253,17 @@ nav .mainMenu .closeMenu,
 }
 
 .overImg {
-    color: rgb(255, 243, 210);
+    color: white;
     height: 65%;
-    width: 70%;
+    width: 80%;
     position: absolute;
-    top: calc(17.5%) ;
-    left: 15%;
+    top: calc(17.5%);
+    left: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 115%;
 }
 
 .text {
