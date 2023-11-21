@@ -219,19 +219,19 @@ nav .mainMenu .closeMenu,
 .rowTypeEven {
     display: grid;
     height: 65vh;
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
 }
 
 .rowTypeUneven1 {
     display: grid;
     height: 55vh;
-    grid-template-columns: 65% 35%
+    grid-template-columns: 65% 35%;
 }
 
 .rowTypeUneven2 {
     display: grid;
     height: 30vh;
-    grid-template-columns: 30% 70%
+    grid-template-columns: 30% 70%;
 }
 
 .grid img {
@@ -248,6 +248,18 @@ nav .mainMenu .closeMenu,
         display: none;
     }
 }
+
+/* @media (min-width:800px) {
+    #second {
+        height: 80vh;
+    }
+
+    #second img {
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+} */
 
 /*MAIN*/
 
