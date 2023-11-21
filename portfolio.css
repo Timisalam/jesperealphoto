@@ -179,8 +179,7 @@ nav .mainMenu .closeMenu,
     .nav-link:link {
         text-decoration: none;
         color: rgb(255, 255, 255);
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .nav-link:visited {

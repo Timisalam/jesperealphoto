@@ -13,9 +13,10 @@ body {
 /*GENERAL*/
 
 /*HEADER*/
-.background-img-container{
+.background-img-container {
     display: none;
 }
+
 nav {
     color: rgb(255, 255, 255);
     display: flex;
@@ -70,59 +71,61 @@ nav .mainMenu .closeMenu,
 }
 
 
-.logo-div{
+.logo-div {
     margin: 6px;
     cursor: pointer;
     text-transform: uppercase;
 }
-.logo{
-        color: black;
-        z-index: 1;
-        margin-right: 40%;
-        
-    }
-.logo img{
-        width: 30%;
-    }
 
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        left: 0px;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgb(0, 0, 0);
-        transition: top 1s ease 0s;
-        display: none;
-    }
+.logo {
+    color: black;
+    z-index: 1;
+    margin-right: 40%;
 
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
+}
 
-    nav .openMenu {
-        display: block;
-    }
+.logo img {
+    width: 30%;
+}
 
-    nav .mainMenu li a:hover {
-        background: none;
-        color: rgb(255, 123, 0);
-    }
+nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+}
 
-    .icons i {
-        display: inline-block;
-        padding: 12px;
-    }
+nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav .openMenu {
+    display: block;
+}
+
+nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+}
+
+.icons i {
+    display: inline-block;
+    padding: 12px;
+}
 
 @media (min-width:800px) {
-    nav{
+    nav {
         display: none;
     }
 
@@ -131,7 +134,7 @@ nav .mainMenu .closeMenu,
         align-items: center;
     }
 
-    .navigation{
+    .navigation {
         position: absolute;
         width: 100%;
         text-align: center;
@@ -139,7 +142,7 @@ nav .mainMenu .closeMenu,
         top: 10%;
     }
 
-    .nav{
+    .nav {
         display: flex;
         align-items: center;
         list-style: none;
@@ -147,7 +150,7 @@ nav .mainMenu .closeMenu,
         margin-right: 2%;
         padding: 0;
     }
-    
+
     .nav-item {
         margin: 1%;
         position: relative;
@@ -163,21 +166,20 @@ nav .mainMenu .closeMenu,
         /*moves first item in flexbox to very left*/
     }
 
-    .logo{
+    .logo {
         color: black;
         z-index: 1;
         margin-right: 40%;
     }
 
-    .logo img{
+    .logo img {
         width: 50%;
     }
 
     .nav-link:link {
         text-decoration: none;
         color: rgb(255, 255, 255);
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .nav-link:visited {
@@ -185,7 +187,7 @@ nav .mainMenu .closeMenu,
     }
 
     .nav-link:hover {
-        color:rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
     }
 
     .background-img-container {
@@ -203,6 +205,7 @@ nav .mainMenu .closeMenu,
         object-fit: cover;
     }
 }
+
 /*HEADER*/
 
 /*MAIN*/
@@ -238,10 +241,15 @@ nav .mainMenu .closeMenu,
     height: 100%;
     position: relative;
 }
+@media (min-width:800px) {
+    .duo-img div  {
+        height: 80vh;
+    }
+}
 
 .first-photo img,
 .second-photo img {
-    height: 100%; /* Adjust the percentage based on your preference */
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
@@ -253,8 +261,10 @@ nav .mainMenu .closeMenu,
 }
 
 .landscape div {
+
     position: relative;
 }
+
 
 .landscape img {
     height: 100%;
@@ -265,7 +275,7 @@ nav .mainMenu .closeMenu,
 
 .triple {
     display: grid;
-    grid-template-columns: 1.35fr 1fr ;
+    grid-template-columns: 1.35fr 1fr;
     grid-template-rows: 100%;
     height: 100%;
 
@@ -274,6 +284,11 @@ nav .mainMenu .closeMenu,
 .triple div {
     height: 100%;
     position: relative;
+}
+@media (min-width:800px) {
+    .triple div  {
+        height: 90vh;
+    }
 }
 
 .triple div img {
@@ -297,7 +312,7 @@ nav .mainMenu .closeMenu,
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 7%;
-    
+
 }
 
 .CTA:hover {
@@ -311,13 +326,15 @@ nav .mainMenu .closeMenu,
 footer {
     background-color: black;
     padding: 5%;
-    display: grid;  
+    display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.items{
+
+.items {
     grid-column: 1;
 }
-footer div{
+
+footer div {
     display: flex;
 }
 
@@ -335,35 +352,42 @@ footer a:hover {
     transform: translateY(2px);
 
 }
+
 @media (min-width:800px) {
-    footer a{
+    footer a {
         font-size: 2vw;
         margin: 1%;
     }
-    footer{
+
+    footer {
         padding: 1%;
     }
 }
-.footer-icons{
+
+.footer-icons {
     display: flex;
     justify-content: flex-end;
-    grid-column:2;
+    grid-column: 2;
     grid-row: 2;
 }
+
 .footer-icons i {
     font-size: 10vw;
     cursor: pointer;
 }
+
 @media (min-width:800px) {
     .footer-icons i {
         margin-right: 2%;
         font-size: 3vw;
     }
+
     .fa-instagram {
         color: white;
     }
+
     .fa-instagram:hover {
         color: rgb(255, 0, 191);
     }
-    
+
 }
