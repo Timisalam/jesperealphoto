@@ -285,8 +285,13 @@ nav .mainMenu .closeMenu,
 
 .rowTypeEven {
     display: grid;
-    height: 60vh;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 1fr 1fr
+}
+
+.rowTypeEven div {
+    height: 55vh;
 }
 
 .grid img {
@@ -294,6 +299,16 @@ nav .mainMenu .closeMenu,
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+}
+
+@media (min-width:800px) {
+    .rowTypeEven div {
+        height: 70vh;
+    }
+
+    .rowTypeEven .left img {
+        object-position: top;
+    }
 }
 
 
