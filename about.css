@@ -231,7 +231,7 @@ nav .mainMenu .closeMenu,
 
 .name {
     position: absolute; /* Positioned absolutely within the container */
-    top: 50%; /* Center vertically by setting it to 50% of the parent's height */
+    top: 120%; /* Center vertically by setting it to 50% of the parent's height */
     left: 50%; /* Center horizontally by setting it to 50% of the parent's width */
     transform: translate(-50%, -50%); /* Move the element up and left by 50% of its own width and height */
     font-size: 400%;
