@@ -4,11 +4,12 @@ const openMenu = document.querySelector('.openMenu');
 const menu_items = document.querySelectorAll('nav .mainMenu li a');
 const background = document.querySelector('.background-img-container');
 const title = document.querySelector('.name');
-
+const phoneBackground = document.querySelector('.mainImgDiv');
 
 openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
 background.addEventListener('mouseover',showName);
+phoneBackground.addEventListener('mouseover',showName)
 // close menu when you click on a menu item 
 menu_items.forEach(item => {
     item.addEventListener('click',function(){
