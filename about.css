@@ -14,9 +14,10 @@ body {
 /*GENERAL*/
 
 /*HEADER*/
-.background-img-container{
+.background-img-container {
     display: none;
 }
+
 nav {
     color: rgb(255, 255, 255);
     display: flex;
@@ -66,66 +67,66 @@ nav .mainMenu .closeMenu,
 }
 
 
-
 .fa-instagram {
     color: rgb(255, 0, 191);
 }
 
 
-
-.logo-div{
+.logo-div {
     margin: 6px;
     cursor: pointer;
     text-transform: uppercase;
 }
-.logo{
-        color: black;
-        z-index: 1;
-        margin-right: 40%;
-        
-    }
-.logo img{
-        width: 30%;
-    }
 
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        left: 0px;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgb(0, 0, 0);
-        transition: top 1s ease 0s;
-        display: none;
-    }
+.logo {
+    color: black;
+    z-index: 1;
+    margin-right: 40%;
 
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
+}
 
-    nav .openMenu {
-        display: block;
-    }
+.logo img {
+    width: 30%;
+}
 
-    nav .mainMenu li a:hover {
-        background: none;
-        color: rgb(255, 123, 0);
-    }
+nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+}
 
-    .icons i {
-        display: inline-block;
-        padding: 12px;
-    }
+nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav .openMenu {
+    display: block;
+}
+
+nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+}
+
+.icons i {
+    display: inline-block;
+    padding: 12px;
+}
 
 @media (min-width:800px) {
-    nav{
+    nav {
         display: none;
     }
 
@@ -134,7 +135,7 @@ nav .mainMenu .closeMenu,
         align-items: center;
     }
 
-    .navigation{
+    .navigation {
         position: absolute;
         width: 100%;
         text-align: center;
@@ -142,7 +143,7 @@ nav .mainMenu .closeMenu,
         top: 10%;
     }
 
-    .nav{
+    .nav {
         display: flex;
         align-items: center;
         list-style: none;
@@ -150,7 +151,7 @@ nav .mainMenu .closeMenu,
         margin-right: 2%;
         padding: 0;
     }
-    
+
     .nav-item {
         margin: 1%;
         position: relative;
@@ -164,22 +165,22 @@ nav .mainMenu .closeMenu,
         margin-right: auto;
         font-style: oblique;
         /*moves first item in flexbox to very left*/
-    } 
-    .logo{
+    }
+
+    .logo {
         color: black;
         z-index: 1;
         margin-right: 40%;
     }
 
-    .logo img{
+    .logo img {
         width: 50%;
     }
 
     .nav-link:link {
         text-decoration: none;
         color: rgb(255, 255, 255);
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .nav-link:visited {
@@ -205,6 +206,7 @@ nav .mainMenu .closeMenu,
         object-fit: cover;
     }
 }
+
 /*HEADER*/
 
 /*MAIN*/
@@ -237,7 +239,7 @@ nav .mainMenu .closeMenu,
     transform: translate(-50%, -50%); /* Move the element up and left by 50% of its own width and height */
     font-size: 400%;
     font-weight: 400;
-    color: rgb(254, 226, 148);
+    color: rgb(255, 255, 255);
 }
 
 .aboutImg {
@@ -253,12 +255,12 @@ nav .mainMenu .closeMenu,
 }
 
 .overImg {
-    color: rgb(255, 243, 210);
+    color: rgb(61, 61, 61);
     height: 65%;
-    width: 70%;
+    width: 90%;
     position: absolute;
     top: calc(17.5%) ;
-    left: 15%;
+    left: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,13 +268,19 @@ nav .mainMenu .closeMenu,
 }
 
 .text {
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
     display: inline-block;
+}
+
+@media (max-width:550px) {
+    .text {
+        font-size: 80%;
+    }
 }
 
 .grid {
