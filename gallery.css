@@ -10,6 +10,7 @@ body {
     flex-direction: column;
 }
 
+
 /*GENERAL*/
 
 /*HEADER*/
@@ -209,7 +210,11 @@ nav .mainMenu li a:hover {
 /*HEADER*/
 
 /*MAIN*/
-
+main a{
+    text-decoration: none;
+    color: white;
+    font-style:oblique;
+}
 .main-img-container {
     height: 100vh;
     overflow: hidden;
@@ -227,98 +232,58 @@ nav .mainMenu li a:hover {
         display: none;
     }
 }
-
-
-.duo-img {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 100%;
-    height: 100%;
-
+.portrait {
+    height: 100vh;
+    overflow: hidden;
 }
 
-.duo-img div {
-    height: 100%;
-    position: relative;
-}
-@media (min-width:800px) {
-    .duo-img div  {
-        height: 80vh;
-    }
-}
-
-.first-photo img,
-.second-photo img {
-    height: 100%;
-    width: 100%;
-
-    object-fit: cover;
-}
-
-.landscape {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.landscape div {
-
-    position: relative;
-}
-
-
-.landscape img {
+.portrait img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    display: block;
+    object-position: bottom;
 }
 
-.triple {
-    display: grid;
-    grid-template-columns: 1.35fr 1fr;
-    grid-template-rows: 100%;
-    height: 100%;
-
+.landscapes {
+    height: 100vh;
+    overflow: hidden;
 }
 
-.triple div {
-    height: 100%;
-    position: relative;
-}
-@media (min-width:800px) {
-    .triple div  {
-        height: 90vh;
-    }
-}
-
-.triple div img {
+.landscapes img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: bottom;
+}
+.name {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 400%;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.portrait-name {
+    position: absolute; 
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, -50%);
+    font-size: 400%;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.landscapes-name {
+    position: absolute; 
+    left: 50%;
+    top: 250%;
+    transform: translate(-50%, -50%);
+    font-size: 400%;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
 }
 
-.CTA {
-    position: absolute;
-    z-index: 1;
-    background-color: black;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    color: white;
-    padding: 4px 14px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 3vw;
-    font-weight: 600;
-    cursor: pointer;
-    margin-bottom: 7%;
 
-}
-
-.CTA:hover {
-    transform: translateY(2px);
-}
 
 /*MAIN*/
 
