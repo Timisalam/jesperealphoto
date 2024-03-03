@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="sports.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-    <title>Jesperealphoto</title>
+    <title>Jesperealphoto - Sports</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="background-img-container">
-            <img  src="https://i.imgur.com/RX9QUPE.jpg" alt="" class="background-img">
+            <img src="https://i.imgur.com/Bb1sRPi.jpg" alt="" class="background-img">
             <div class="navigation">
             <ul class="nav">
                 <li class="nav-item">
@@ -32,7 +32,7 @@
                     <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                    <a class="nav-link" href="contact.html">CONTACT</a>
                 </li> 
             </ul>
             </div>
@@ -45,7 +45,7 @@
             <ul class="mainMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
                 <span class="icons">
@@ -57,32 +57,33 @@
     </header>
 
     <main>
-        <div class="main-img-container">
-            <img src="https://i.imgur.com/RX9QUPE.jpg
-            " alt="" class="main-img">
-        </div>
-        <div class="duo-img">
-            <div class="first-photo"><img src="https://i.imgur.com/pmYYjhh.jpeg" alt=""></div>
-            <div class="second-photo"><img src="https://i.imgur.com/63TRoqZ.jpeg" alt=""></div>
-        </div>
-        <div class="landscape">
-            <div><img src="https://i.imgur.com/JKlGiip.jpeg" alt=""></div>
-        </div>
-        <div class="triple">
-            <div><img src="https://i.imgur.com/fuKQKOv.jpg " alt=""></div>
-            <div><img src="https://i.imgur.com/dafiizp.jpeg" alt=""></div>
-        </div>
-        <div class="landscape">
-            <div><img src="https://i.imgur.com/KwV286S.jpg" alt=""></div>
-            <a href="portfolio.html" class="CTA">MORE PHOTOS</a>
-        </div>
+        <div class="grid">
+            <div class="firstPhotoInTheGrid">
+                <img src="https://i.imgur.com/Bb1sRPi.jpg" alt="">
+            </div>
+            <div id="two" class="rowTypeUneven1">
+                <div><img src="https://i.imgur.com/PrOsYhh.jpg" alt=""></div>
+                <div><img class="two2" src="https://i.imgur.com/OAWcAwJ.jpg" alt=""></div>
+            </div>
+            <div id="three" class="rowTypeEven">
+                <div><img src="https://i.imgur.com/OAVTtA2.jpg" alt=""></div>
+                <div><img src="https://i.imgur.com/srtue0V.jpg" alt=""></div>
+            </div>
+            <div id="four" class="rowTypeEven">
+                <div><img class="six1" src="https://i.imgur.com/Zq5tjHU.jpg" alt=""></div> <!-- ESTA -->
+                <div><img src="https://i.imgur.com/8XZTzJ8.jpg" alt=""></div> <!-- ESTA -->
+            </div>
+            <div id="five" class="singular"><img src="https://i.imgur.com/RX9QUPE.jpg" alt=""></div>
+            <div id="six" class="singular"><img src="https://i.imgur.com/2qvs8HS.jpg" alt=""></div>
+            <div class="singular"><img src="https://i.imgur.com/08LV862.jpeg" alt=""></div>
+            
     </main>
-
     <footer>
+        <div class="items"><a href="index.html" class="portfolio">Home</a></div>
         <div class="items"><a href="about.html" class="about-me">About</a></div>
-        <div class="items"><a href="portfolio.html" class="portfolio">Portfolio</a></div>
-        <div class="items"><a href="gallery.html" class="contact">Gallery</a></div>
+        <div class="items"><a href="contact.html" class="contact">Contact</a></div>
         <span class="footer-icons"><a target="_blank" href="https://www.instagram.com/jesperealphoto/"><i class="fab fa-instagram"></i></a>
+        </span>   
     </footer>
 
     <script src="./app.js"></script>
