@@ -210,17 +210,18 @@ nav .mainMenu li a:hover {
 /*HEADER*/
 
 /*MAIN*/
-main a{
+main a {
     text-decoration: none;
     color: white;
-    font-style:oblique;
+    font-style: oblique;
 }
-.main-img-container {
+
+.sports {
     height: 100vh;
     overflow: hidden;
 }
 
-.main-img-container .main-img {
+.sports img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -228,10 +229,12 @@ main a{
 }
 
 @media (min-width:800px) {
-    .main-img-container {
+    .sports {
         display: none;
     }
+
 }
+
 .portrait {
     height: 100vh;
     overflow: hidden;
@@ -242,6 +245,15 @@ main a{
     width: 100%;
     object-fit: cover;
     object-position: bottom;
+}
+
+@media (min-width:800px) {
+    .portrait img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 .landscapes {
@@ -255,17 +267,27 @@ main a{
     object-fit: cover;
     object-position: bottom;
 }
-.name {
-    position: absolute; 
-    top: 80%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+@media (min-width:800px) {
+    .landscapes img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position:center;
+    }
+}
+
+.sport-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 400%;
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
+
 .portrait-name {
-    position: absolute; 
+    position: absolute;
     left: 50%;
     top: 175%;
     transform: translate(-50%, -50%);
@@ -273,8 +295,9 @@ main a{
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
+
 .landscapes-name {
-    position: absolute; 
+    position: absolute;
     left: 50%;
     top: 275%;
     transform: translate(-50%, -50%);
