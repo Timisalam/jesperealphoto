@@ -204,6 +204,7 @@ nav .mainMenu li a:hover {
         height: 100%;
         opacity: 1;
         object-fit: cover;
+        
     }
 }
 
@@ -289,7 +290,7 @@ main a {
 .portrait-name {
     position: absolute;
     left: 50%;
-    top: 175%;
+    top: 145%;
     transform: translate(-50%, -50%);
     font-size: 400%;
     font-weight: 400;

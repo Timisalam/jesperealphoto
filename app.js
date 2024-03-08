@@ -44,15 +44,15 @@ document.addEventListener('DOMContentLoaded',e => {
         console.log('hello')
     }, 100);
 })
-portrait.addEventListener('mouseover',e => {
-    setTimeout(function () {
-        portraitTitle.style.transition = 'top 1s ease'; // Set the transition property
-        portraitTitle.style.top = '145%';
-    }, 100);
-})
-landscapes.addEventListener('mouseover',e => {
-    setTimeout(function () {
-        landscapesTitle.style.transition = 'top 1s ease'; // Set the transition property
-        landscapesTitle.style.top = '240%';
-    }, 100);
-})
+// portrait.addEventListener('mouseover',e => {
+//     setTimeout(function () {
+//         portraitTitle.style.transition = 'top 1s ease'; // Set the transition property
+//         portraitTitle.style.top = '145%';
+//     }, 100);
+// })
+// landscapes.addEventListener('mouseover',e => {
+//     setTimeout(function () {
+//         landscapesTitle.style.transition = 'top 1s ease'; // Set the transition property
+//         landscapesTitle.style.top = '240%';
+//     }, 100);
+// })
