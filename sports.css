@@ -219,8 +219,18 @@ nav .mainMenu .closeMenu,
     width: 100%;
     grid-template-columns: 1fr 1fr;
 }
+.rowTypeEven1 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 .rowTypeEven div {
+    height: 100vh;
+}
+.rowTypeEven1 div {
     height: 55vh;
 }
 
@@ -255,13 +265,14 @@ nav .mainMenu .closeMenu,
     display: block;
 }
 
+
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
         display: none;
     }
 
     #two div {
-        height: 85vh;
+        height: 45vh;
     }
 
     .two2 {
@@ -269,88 +280,32 @@ nav .mainMenu .closeMenu,
     }
 
     #three div {
-        height: 65vh;
+        height: 55vh;
     }
 
-    #four {
-        height: 125vh;
+    #four div  {
+        height: 120vh;
+    }
+    .ballerina {
+        object-position: center;
     }
 
-    #five {
-        height: 135vh;
+    
+    #five  {
+        height: 100vh;
     }
-
-    #six div {
-        height: 80vh;
+    #six  {
+        height: 100vh;
     }
 
     .six1 {
         object-position: bottom;
     }
-
-    #eight div {
-        height: 70vh;
+    #seven  {
+        height: 100vh;
     }
 
-    #nine {
-        height: 110vh;
-    }
-
-    #ten div {
-        height: 90vh;
-    }
-
-    .ten1 {
-        object-position: center;
-    }
-
-    #eleven {
-        height: 85vh;
-    }
-
-    #eleven img {
-        object-position: bottom;
-    }
-
-    #twelve div {
-        height: 70vh;
-    }
-
-    .twelve2 {
-        object-position: bottom;
-    }
-
-    #thirdteen {
-        height: 110vh;
-    }
-
-    #fourteen div {
-        height: 110vh;
-    }
-
-    #fifteen {
-        height: 90vh;
-    }
-
-    #fifteen img {
-        object-position: bottom;
-    }
-
-    #sixteen {
-        height: 115vh;
-    }
-
-    #sixteen img {
-        object-position: bottom;
-    }
-
-    #seventeen div {
-        height: 120vh;
-    }
-
-    #eighteen {
-        height: 165vh;
-    }
+    
 }
 
 /*MAIN*/

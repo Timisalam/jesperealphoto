@@ -40,7 +40,7 @@ function showName(){
 document.addEventListener('DOMContentLoaded',e => {
     setTimeout(function () {
         sportsTitle.style.transition = 'top 1s ease'; // Set the transition property
-        sportsTitle.style.top = '30%';
+        sportsTitle.style.top = '35%';
         console.log('hello')
     }, 100);
 })

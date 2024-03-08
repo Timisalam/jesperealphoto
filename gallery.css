@@ -195,16 +195,17 @@ nav .mainMenu li a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 120vh;
         width: 100vw;
-        height: 100vh;
     }
 
     .background-img {
         width: 100%;
         height: 100%;
-        opacity: 1;
         object-fit: cover;
-        
+        object-position: center;
+
+
     }
 }
 
@@ -253,7 +254,7 @@ main a {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        object-position: center;
+        object-position: top;
     }
 }
 
@@ -268,12 +269,23 @@ main a {
     object-fit: cover;
     object-position: bottom;
 }
+
 @media (min-width:800px) {
     .landscapes img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        object-position:center;
+        object-position: top;
+    }
+
+    .landscapes-name {
+        position: absolute;
+        left: 50%;
+        top: 240%;
+        transform: translate(-50%, -50%);
+        font-size: 400%;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -290,7 +302,7 @@ main a {
 .portrait-name {
     position: absolute;
     left: 50%;
-    top: 145%;
+    top: 135%;
     transform: translate(-50%, -50%);
     font-size: 400%;
     font-weight: 400;
@@ -300,14 +312,29 @@ main a {
 .landscapes-name {
     position: absolute;
     left: 50%;
-    top: 275%;
+    top: 240%;
     transform: translate(-50%, -50%);
     font-size: 400%;
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
 
+@media (min-width:800px) {
 
+    .landscapes-name {
+        top: 265%;
+
+    }
+
+    .portrait-name {
+        top: 160%;
+    }
+
+    .sport-title {
+        top: 70%;
+
+    }
+}
 
 /*MAIN*/
 
