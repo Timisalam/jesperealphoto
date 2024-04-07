@@ -219,19 +219,28 @@ nav .mainMenu .closeMenu,
     width: 100%;
     grid-template-columns: 1fr 1fr;
 }
+.rowTypeEven div {
+    height: 100vh;
+}
+
 .rowTypeEven1 {
     display: grid;
     height: 100%;
     width: 100%;
     grid-template-columns: 1fr 1fr;
 }
-
-
-.rowTypeEven div {
-    height: 100vh;
-}
 .rowTypeEven1 div {
     height: 55vh;
+}
+
+.rowTypeEven2 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.rowTypeEven2 div {
+    height: 80vh;
 }
 
 .rowTypeUneven1 {
@@ -240,7 +249,6 @@ nav .mainMenu .closeMenu,
     width: 100%;
     grid-template-columns: 65% 35%;
 }
-
 .rowTypeUneven1 div {
     height: 45vh;
 }
@@ -250,7 +258,6 @@ nav .mainMenu .closeMenu,
     height: 100%;
     grid-template-columns: 30% 70%;
 }
-
 .rowTypeUneven2 div {
     height: 30vh;
 }
@@ -271,41 +278,16 @@ nav .mainMenu .closeMenu,
         display: none;
     }
 
+    /*
+    add here specific attrivutes such as:
     #two div {
         height: 45vh;
     }
 
     .two2 {
         object-position: bottom;
-    }
-
-    #three div {
-        height: 55vh;
-    }
-
-    #four div  {
-        height: 120vh;
-    }
-    .ballerina {
-        object-position: center;
-    }
-
-    
-    #five  {
-        height: 100vh;
-    }
-    #six  {
-        height: 100vh;
-    }
-
-    .six1 {
-        object-position: bottom;
-    }
-    #seven  {
-        height: 100vh;
-    }
-
-    
+    } 
+    */
 }
 
 /*MAIN*/
