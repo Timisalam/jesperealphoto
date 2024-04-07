@@ -230,7 +230,7 @@ nav .mainMenu .closeMenu,
     grid-template-columns: 1fr 1fr;
 }
 .rowTypeEven1 div {
-    height: 55vh;
+    height: 80vh;
 }
 
 .rowTypeEven2 {
@@ -250,7 +250,7 @@ nav .mainMenu .closeMenu,
     grid-template-columns: 65% 35%;
 }
 .rowTypeUneven1 div {
-    height: 45vh;
+    height: 95vh;
 }
 
 .rowTypeUneven2 {
@@ -259,7 +259,7 @@ nav .mainMenu .closeMenu,
     grid-template-columns: 30% 70%;
 }
 .rowTypeUneven2 div {
-    height: 30vh;
+    height: 100vh;
 }
 
 .grid img {
@@ -276,6 +276,22 @@ nav .mainMenu .closeMenu,
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
         display: none;
+    }
+
+    #two3 {
+        object-position: top;
+    }
+
+    #nine1 {
+        object-position: top;
+    }
+
+    #nine2 {
+        object-position: top;
+    }
+
+    #ten div {
+        height: 60vh;
     }
 
     /*
