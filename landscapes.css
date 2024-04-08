@@ -219,30 +219,39 @@ nav .mainMenu .closeMenu,
     width: 100%;
     grid-template-columns: 1fr 1fr;
 }
+.rowTypeEven div {
+    height: 100vh;
+}
+
 .rowTypeEven1 {
     display: grid;
     height: 100%;
     width: 100%;
     grid-template-columns: 1fr 1fr;
 }
-
-
-.rowTypeEven div {
-    height: 100vh;
-}
 .rowTypeEven1 div {
-    height: 55vh;
+    height: 80vh;
+}
+
+.rowTypeEven2 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.rowTypeEven2 div {
+    height: 100vh;
 }
 
 .rowTypeUneven1 {
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 60% 40%;
 }
 
 .rowTypeUneven1 div {
-    height: 45vh;
+    height: 55vh;
 }
 
 .rowTypeUneven2 {
@@ -271,41 +280,55 @@ nav .mainMenu .closeMenu,
         display: none;
     }
 
-    #two div {
-        height: 45vh;
-    }
-
     .two2 {
         object-position: bottom;
     }
 
-    #three div {
-        height: 55vh;
-    }
-
     #four div  {
-        height: 120vh;
+        height: 140vh;
     }
-    .ballerina {
-        object-position: center;
-    }
-
-    
     #five  {
-        height: 100vh;
+        height: 130vh;
     }
     #six  {
         height: 100vh;
     }
-
-    .six1 {
-        object-position: bottom;
-    }
     #seven  {
         height: 100vh;
     }
-
-    
+    #seven img {
+        object-position: bottom;
+    }
+    #nine3 {
+        object-position: bottom;
+    }
+    #ten  {
+        height: 70vh;
+    }
+    .eleven1 {
+        object-position: bottom;
+    }
+    #twelve  {
+        height: 80vh;
+    }
+    #thirteen {
+        height: 100vh;
+    }
+    #fourteen1 {
+        object-position: bottom;
+    }
+    #fiveteen {
+        height: 110vh;
+    }
+    #fiveteen img {
+        object-position: bottom;
+    }
+    #sixteen {
+        height: 120vh;
+    }
+    #sixteen img {
+        object-position: bottom;
+    }
 }
 
 /*MAIN*/
