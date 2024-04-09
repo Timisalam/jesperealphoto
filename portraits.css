@@ -230,7 +230,7 @@ nav .mainMenu .closeMenu,
     grid-template-columns: 1fr 1fr;
 }
 .rowTypeEven1 div {
-    height: 80vh;
+    height: 100vh;
 }
 
 .rowTypeEven2 {
@@ -240,7 +240,7 @@ nav .mainMenu .closeMenu,
     grid-template-columns: 1fr 1fr 1fr;
 }
 .rowTypeEven2 div {
-    height: 80vh;
+    height: 40vh;
 }
 
 .rowTypeUneven1 {
@@ -272,6 +272,52 @@ nav .mainMenu .closeMenu,
     display: block;
 }
 
+#five1 {
+    display: none;
+}
+.five {
+    display: grid;
+}
+
+#nine1 {
+    display: none;
+}
+.nine {
+    display: grid;
+}
+.ninePhone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ninePhone div {
+    height: 75vh;
+}
+
+#four {
+    grid-template-columns: 40% 60%;
+}
+#four div {
+    height: 50vh;
+}
+
+#three1 {
+    display: none;
+}
+.three {
+    display: grid;
+}
+
+#eight1 {
+    display: none;
+}
+.eight {
+    display: grid;
+}
+
+#eleven div {
+    height: 40vh;
+}
+
 
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
@@ -283,27 +329,59 @@ nav .mainMenu .closeMenu,
     }
 
     #nine1 {
+        display: grid;
+    }
+    .nine {
+        display: none;
+    }
+    .ninePhone {
+        display: none;
+    }
+    #nine1 div {
+        height: 100vh;
+    }
+    #nine3 {
         object-position: top;
     }
-
     #nine2 {
         object-position: top;
+    }
+    #eleven div {
+        height: 100vh;
+    }
+
+    #four div {
+        height: 100vh;
     }
 
     #ten div {
         height: 60vh;
     }
 
-    /*
-    add here specific attrivutes such as:
     #two div {
-        height: 45vh;
+        height: 90vh;
     }
 
-    .two2 {
-        object-position: bottom;
-    } 
-    */
+    #five1 {
+        display: grid;
+    }
+    .five {
+        display: none;
+    }
+
+    #three1 {
+        display: grid;
+    }
+    .three {
+        display: none;
+    }
+    
+    #eight1 {
+        display: grid;
+    }
+    .eight {
+        display: none;
+    }
 }
 
 /*MAIN*/
