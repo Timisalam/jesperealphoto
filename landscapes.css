@@ -274,16 +274,79 @@ nav .mainMenu .closeMenu,
     display: block;
 }
 
+#four div  {
+    height: 50vh;
+}
+#two1 {
+    display: none;
+}
+.two {
+    display: grid;
+}
+#eight1 {
+    display: none;
+}
+.eight {
+    display: grid;
+}
+.eightPhone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#three div {
+    height: 60vh;
+}
+#nine div {
+    height: 40vh;
+}
+#eleven div {
+    height: 60vh;
+}
+#fourteenPhone {
+    display: none;
+}
+.fourteen {
+    display: grid;
+}
+#thirteenPhone {
+    display: grid;
+}
+#thirteenPhone div {
+    height: 50vh;
+}
+#thirteen {
+    display: none;
+}
+
 
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
         display: none;
     }
-
+    #two1 {
+        display: grid;
+    }
+    .two {
+        display: none;
+    }
     .two2 {
         object-position: bottom;
     }
-
+    #three div {
+        height: 80vh;
+    }
+    #eight1 {
+        display: grid;
+    }
+    .eight {
+        display: none;
+    }
+    .eightPhone {
+        display: none;
+    }
+    #nine div {
+        height: 100vh;
+    }
     #four div  {
         height: 140vh;
     }
@@ -305,14 +368,29 @@ nav .mainMenu .closeMenu,
     #ten  {
         height: 70vh;
     }
+    #eleven div {
+        height: 80vh;
+    }
     .eleven1 {
         object-position: bottom;
     }
     #twelve  {
         height: 80vh;
     }
+    #thirteenPhone {
+        display: none;
+    }
     #thirteen {
+        display: grid;
+    }
+    #thirteen div {
         height: 100vh;
+    }
+    #fourteenPhone {
+        display: grid;
+    }
+    .fourteen {
+        display: none;
     }
     #fourteen1 {
         object-position: bottom;
