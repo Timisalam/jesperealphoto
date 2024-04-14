@@ -428,6 +428,30 @@ nav .mainMenu .closeMenu,
     #sixteen img {
         object-position: bottom;
     }
+    #seventeen div {
+        height: 85vh;
+    }
+    #eighteen div {
+        height: 85vh;
+    }
+    #twentyone div {
+        height: 110vh;
+    }
+    #twentytwo div {
+        height: 70vh;
+    }
+    #twentyfour div {
+        height: 125vh;
+    }
+    #twentyfive div {
+        height: 125vh;
+    }
+    #twentyseven div {
+        height: 75vh;
+    }
+    #twentyeight div {
+        height: 95vh;
+    }
 }
 
 /*MAIN*/
