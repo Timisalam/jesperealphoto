@@ -317,6 +317,27 @@ nav .mainMenu .closeMenu,
 #thirteen {
     display: none;
 }
+#seventeen div {
+    height: 40vh;
+}
+#eighteen div {
+    height: 55vh;
+}
+#twentyone div {
+    height: 45vh;
+}
+#twentytwo div {
+    height: 30vh;
+}
+#twentyfour div {
+    height: 45vh;
+}
+#twentyfive div {
+    height: 45vh;
+}
+#twentyeight div {
+    height: 25vh;
+}
 
 
 @media (min-width:800px) {
