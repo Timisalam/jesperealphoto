@@ -318,6 +318,25 @@ nav .mainMenu .closeMenu,
     height: 40vh;
 }
 
+#twelve  {
+    grid-template-columns: 65% 35%;
+}
+#twelve div {
+    height: 40vh;
+}
+
+#fourteen div {
+    height: 55vh;
+}
+
+#sixteen div {
+    height: 50vh;
+}
+
+#eighteen div {
+    height: 30vh;
+}
+
 
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
@@ -381,6 +400,25 @@ nav .mainMenu .closeMenu,
     }
     .eight {
         display: none;
+    }
+
+    #twelve  {
+        grid-template-columns: 73% 27%;
+    }
+    #twelve div {
+        height: 145vh;
+    }
+    
+    #fourteen div {
+        height: 95vh;
+    }
+    
+    #sixteen div {
+        height: 110vh;
+    }
+    
+    #eighteen div {
+        height: 135vh;
     }
 }
 
