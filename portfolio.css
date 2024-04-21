@@ -268,7 +268,9 @@ nav .mainMenu .closeMenu,
 .rowTypeEven3 div {
     height: 100vh;
 }
-
+.bottom{
+    object-position: bottom;
+}
 
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
@@ -360,7 +362,7 @@ nav .mainMenu .closeMenu,
     }
 
     #seventeen {
-        height: 120vh;
+        height: 90vh;
     }
     #nineteen{
         height: 120vh;
