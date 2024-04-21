@@ -264,7 +264,21 @@ nav .mainMenu .closeMenu,
 .grid .singular img {
     display: block;
 }
-
+.rowTypeEven3 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.rowTypeEven3 div {
+    height: 100vh;
+}
+.groupBikers img{
+    object-position: top;
+}
+.soloBiker img{
+    object-position: center;    
+}
 
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
@@ -286,9 +300,7 @@ nav .mainMenu .closeMenu,
     #four div  {
         height: 120vh;
     }
-    .ballerina {
-        object-position: center;
-    }
+    
 
     
     #five  {

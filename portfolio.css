@@ -253,6 +253,22 @@ nav .mainMenu .closeMenu,
 .grid .singular img {
     display: block;
 }
+.groupBikers img{
+    object-position: top;
+}
+.soloBiker img{
+    object-position: center;    
+}
+.rowTypeEven3 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.rowTypeEven3 div {
+    height: 100vh;
+}
+
 
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
@@ -328,28 +344,33 @@ nav .mainMenu .closeMenu,
     }
 
     #fifteen {
-        height: 90vh;
+        height: 120vh;
     }
 
     #fifteen img {
-        object-position: bottom;
+        object-position: top;
     }
 
     #sixteen {
-        height: 115vh;
+        height: 100vh;
     }
 
     #sixteen img {
         object-position: bottom;
     }
 
-    #seventeen div {
+    #seventeen {
         height: 120vh;
     }
-
-    #eighteen {
-        height: 165vh;
+    #nineteen{
+        height: 120vh;
     }
+    #twenty{
+        height: 120vh;
+    }
+   
+
+    
 }
 
 /*MAIN*/
