@@ -272,13 +272,70 @@ nav .mainMenu .closeMenu,
     object-position: bottom;
 }
 
+#four{
+    height: 110vh;
+}
+#five{
+    height: 50vh;
+}
+#seven{
+    height: 75vh;
+}
+#nine{
+    height: 50vh;
+}
+#eleven{
+    height: 60vh;
+}
+#thirteen{
+    height: 105vh;
+}
+#fifteen{
+    height: 50vh;
+}
+#seventeen{
+    height: 50vh;
+}
+#nineteen{
+    height: 50vh;
+}
+#twenty{
+    height: 60vh;
+}
+#twenty-three{
+    height: 50vh;
+}
+.left{
+    object-position: left;
+}
+.right{
+    object-position: right;
+}
+#twenty-six{
+    object-position: right;
+}
+
+#twenty-seven{
+    height: 100vh;
+}
+
+#twenty-four{
+    height:55vh;
+}
+#twenty-six {
+    object-position: top;
+}
+.bottom{
+    object-position: bottom;
+}
+
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
         display: none;
     }
 
     #two div {
-        height: 85vh;
+        height: 110vh;
     }
 
     .two2 {
@@ -286,7 +343,7 @@ nav .mainMenu .closeMenu,
     }
 
     #three div {
-        height: 65vh;
+        height: 110vh;
     }
 
     #four {
@@ -294,27 +351,30 @@ nav .mainMenu .closeMenu,
     }
 
     #five {
-        height: 135vh;
+        height: 110vh;
     }
 
     #six div {
-        height: 80vh;
+        height: 100vh;
     }
 
     .six1 {
         object-position: bottom;
     }
-
-    #eight div {
-        height: 70vh;
-    }
-
-    #nine {
+    #seven{
         height: 110vh;
     }
 
+    #eight div {
+        height: 50vh;
+    }
+
+    #nine {
+        height: 60vh;
+    }
+
     #ten div {
-        height: 90vh;
+        height: 110vh;
     }
 
     .ten1 {
@@ -322,7 +382,7 @@ nav .mainMenu .closeMenu,
     }
 
     #eleven {
-        height: 85vh;
+        height: 55vh;
     }
 
     #eleven img {
@@ -330,7 +390,7 @@ nav .mainMenu .closeMenu,
     }
 
     #twelve div {
-        height: 70vh;
+        height: 50vh;
     }
 
     .twelve2 {
@@ -354,24 +414,29 @@ nav .mainMenu .closeMenu,
     }
 
     #sixteen {
-        height: 100vh;
+        height: 50vh;
     }
 
-    #sixteen img {
-        object-position: bottom;
-    }
-
+    
     #seventeen {
-        height: 90vh;
+        height: 60vh;
+    }
+    #eighteen{
+        height: 50vh;
     }
     #nineteen{
-        height: 120vh;
+        height: 100vh;
     }
+    
     #twenty{
         height: 120vh;
     }
-   
-
+    #twenty-six{
+        height: 50vh;
+    }
+    #twenty-seven{
+        height: 120vh;
+    }
     
 }
 
