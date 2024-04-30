@@ -285,6 +285,9 @@ nav .mainMenu .closeMenu,
 #five{
     height: 55vh;
 }
+#seven div{
+    height: 45vh;
+}
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
         display: none;
