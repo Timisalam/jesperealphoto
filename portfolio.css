@@ -279,17 +279,20 @@ nav .mainMenu .closeMenu,
     height: 50vh;
 }
 #seven{
-    height: 75vh;
-}
-#nine{
     height: 50vh;
 }
-#eleven{
-    height: 60vh;
+
+#nine{
+    height: 55vh;
 }
+#eleven{
+    height: 75vh;
+}
+
 #thirteen{
     height: 105vh;
 }
+
 #fifteen{
     height: 50vh;
 }
@@ -305,6 +308,7 @@ nav .mainMenu .closeMenu,
 #twenty-three{
     height: 50vh;
 }
+
 .left{
     object-position: left;
 }
@@ -370,7 +374,7 @@ nav .mainMenu .closeMenu,
     }
 
     #nine {
-        height: 60vh;
+        height: 105vh;
     }
 
     #ten div {
@@ -382,15 +386,18 @@ nav .mainMenu .closeMenu,
     }
 
     #eleven {
-        height: 55vh;
+        height: 105vh;
     }
 
     #eleven img {
         object-position: bottom;
     }
 
-    #twelve div {
-        height: 50vh;
+    #twelve div  {
+        height: 100vh;
+    }
+    #twelve img  {
+        object-position: bottom;
     }
 
     .twelve2 {
@@ -413,26 +420,45 @@ nav .mainMenu .closeMenu,
         object-position: top;
     }
 
-    #sixteen {
-        height: 50vh;
+ 
+    #sixteen div{
+        height: 105vh;
     }
 
     
     #seventeen {
-        height: 60vh;
+        height: 105vh;
     }
-    #eighteen{
-        height: 50vh;
+    #seventeen img {
+        object-position: top;
+    }
+    #eighteen div {
+        height: 105vh;
     }
     #nineteen{
-        height: 100vh;
+        height: 105vh;
     }
     
     #twenty{
         height: 120vh;
     }
+    #twenty-one div{ 
+        height: 55vh;
+    }
+    #twenty-two{
+        height: 55vh;
+    }
+    #twenty-four{
+        height: 105vh;
+    }
     #twenty-six{
-        height: 50vh;
+        height: 55vh;
+    }
+    #twenty-five div{
+        height: 105vh;
+    }
+    .bottom-left{
+        object-position: bottom;
     }
     #twenty-seven{
         height: 120vh;

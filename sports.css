@@ -279,14 +279,22 @@ nav .mainMenu .closeMenu,
 .soloBiker img{
     object-position: center;    
 }
-
+#four{
+    height: 60vh;
+}
+#five{
+    height: 55vh;
+}
 @media (min-width:800px) {
     .firstPhotoInTheGrid {
         display: none;
     }
+    .background-img-container{
+        height: 100vh;
+    }
 
     #two div {
-        height: 45vh;
+        height: 100vh;
     }
 
     .two2 {
@@ -294,26 +302,26 @@ nav .mainMenu .closeMenu,
     }
 
     #three div {
-        height: 55vh;
+        height: 100vh;
     }
 
-    #four div  {
+    #four  {
         height: 120vh;
     }
     
 
     
     #five  {
-        height: 100vh;
+        height: 105vh;
     }
     #six  {
-        height: 100vh;
+        height: 105vh;
     }
 
     .six1 {
         object-position: bottom;
     }
-    #seven  {
+    #seven div  {
         height: 100vh;
     }
 
