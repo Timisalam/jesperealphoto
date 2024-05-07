@@ -37,13 +37,13 @@ function showName(){
         title.style.top = '50%';
     }, 200);
 }
-document.addEventListener('DOMContentLoaded',e => {
-    setTimeout(function () {
-        sportsTitle.style.transition = 'top 1s ease'; // Set the transition property
-        sportsTitle.style.top = '35%';
-        console.log('hello')
-    }, 100);
-})
+// document.addEventListener('DOMContentLoaded',e => {
+//     setTimeout(function () {
+//         sportsTitle.style.transition = 'top 1s ease'; // Set the transition property
+//         sportsTitle.style.top = '35%';
+//         console.log('hello')
+//     }, 100);
+// })
 // portrait.addEventListener('mouseover',e => {
 //     setTimeout(function () {
 //         portraitTitle.style.transition = 'top 1s ease'; // Set the transition property
