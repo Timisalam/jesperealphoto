@@ -233,62 +233,78 @@ nav .mainMenu li a:hover {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 100%;
-    height: 100%;
+
+}
+.duo-img {
+    height: 50vh;
 
 }
 
-.duo-img div {
-    height: 100%;
-    position: relative;
-}
+
 @media (min-width:800px) {
-    .duo-img div  {
-        height: 80vh;
+    .duo-img   {
+        height: 105vh;
     }
 }
 
-.first-photo img,
-.second-photo img {
-    height: 100%;
-    width: 100%;
+    .first-photo img,
+    .second-photo img {
+        height: 100%;
+        width: 100%;
 
-    object-fit: cover;
-}
+            object-fit: cover;
+    }
 
 .landscape {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.landscape div {
-
-    position: relative;
+.landscape div{
+    height: 60vh;
 }
 
+
+.first-landscape div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+@media (min-width:800px) {
+    .landscape div  {
+        height: 100vh;
+        width: 100vw;
+    }
+    .first-landscape div{
+height: 105vh;
+    }
+}
 
 .landscape img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    display: block;
+}
+.first-landscape img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .triple {
     display: grid;
     grid-template-columns: 1.35fr 1fr;
     grid-template-rows: 100%;
-    height: 100%;
 
 }
 
 .triple div {
-    height: 100%;
-    position: relative;
+    height: 45vh;
 }
 @media (min-width:800px) {
     .triple div  {
-        height: 90vh;
+        height: 105vh;
     }
 }
 
